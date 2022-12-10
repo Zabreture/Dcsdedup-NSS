@@ -1,0 +1,98 @@
+{
+  "private_key": "22591e135eaab2f177fc3a79a158cc02f257043cd89746061a8e37b9df3b7ee9",
+  "IPFS_api": "/ip4/127.0.0.1/tcp/5001",
+  "secret_key": "5ee51e8a6bf45a877c1c6deec0a270c7502fdf09dfd15598fdc089692182dd0e",
+  "contract_address": "0x4573FDb7eD2fe1E24F5A5d5aC24dF1Beb887cfC3",
+  "initial_vector": "abcdefg123456789",
+  "base_url": "http://8.130.15.53:81",
+  "ganache_url": "http://localhost:7545",
+  "rinkeby_url": "https://rinkeby.infura.io/v3/bb4105854abf435fa1ccceadf7a35b9e",
+  "contract_abi" : [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "fileTag",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "head",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "tail",
+          "type": "bytes32"
+        }
+      ],
+      "name": "FIndexPut",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "fileTag",
+          "type": "bytes32"
+        }
+      ],
+      "name": "FIndexGet",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "head",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "tail",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "fileTag",
+          "type": "bytes32"
+        }
+      ],
+      "name": "UListGet",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "users",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "fileTag",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "UListPut",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+}
